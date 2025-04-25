@@ -18,4 +18,30 @@ interpreter assigns variables a type at runtime based on the variable's value at
 const val1=Symbol('123');
 const val2=Symbol('123');
 
-console.log(val1===val2); //symbol makes things unique
+// console.log(val1===val2); //symbol makes things unique
+
+//  stack and heap memory 
+// Prmitive uses stack  => that means a copy of original is made first
+// Non Prmitive uses heap=> reference is given to us and we are changing the origional
+//  variable directly
+
+let mayName="Nisha";
+let otherName=mayName;
+
+otherName="Shreya";
+
+// console.log(otherName);
+// console.log(mayName);
+
+// Non p
+
+let userOne={
+    name:"user1",
+    mail:"user1@gmail.com"
+}
+
+let userTwo=userOne;
+userTwo.mail="baba@gmail.com";
+
+console.log(userOne);
+console.log(userTwo);
